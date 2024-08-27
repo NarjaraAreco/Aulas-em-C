@@ -13,8 +13,16 @@ int main(){
     printf("Digite sua altura: ");
     scanf("%f", &altura);
 
-
-    printf("\nSua idade eh %i, sua altura eh %.2f e seu sexo eh %c", idade,altura,sexo);
-
+    if (sexo == 'M' || sexo == 'm'){
+        printf("Sexo masculino");
+    }
+    else if(sexo == 'F' || sexo =='f'){
+        printf("Sexo feminino");
+        printf("\nSua idade eh %i, sua altura eh %.2f", idade,altura);
+    }
+    else{
+        printf("Impossivel determinar");
+    }
+    
     return 0;
 }
